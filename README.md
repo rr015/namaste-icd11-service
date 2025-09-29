@@ -17,3 +17,29 @@ Integration Capabilities
 •	RESTful API: FHIR-compliant endpoints for EMR integration
 •	Web Interface: Modern React-based admin and user interface
 
+
+Project Structure
+
+namaste-icd11-service/
+├── app/
+│   ├── main.py                 # FastAPI application
+│   ├── schemas.py             # Pydantic models
+│   ├── services/
+│   │   ├── terminology.py     # Core terminology service
+│   │   ├── search.py          # Advanced search engine
+│   │   └── security.py        # Authentication & authorization
+│   ├── data/
+│   │   ├── demo_data.py       # Sample terminology data
+│   │   └── csv_parser.py      # CSV import/export
+│   └── utils/
+│       ├── phonetic.py        # Phonetic matching
+│       ├── similarity.py      # Semantic search
+│       └── mapping.py         # Code mapping utilities
+├── frontend/
+│   ├── src/
+│   │   ├── components/        # React components
+│   │   ├── services/          # API integration
+│   │   └── styles/            # CSS stylesheets
+│   └── public/
+└── requirements.txt
+
