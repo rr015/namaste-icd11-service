@@ -1,0 +1,44 @@
+/* src/components/JsonDisplay.css */
+.json-display {
+  margin: 1rem 0;
+}
+
+.json-display h4 {
+  margin-bottom: 0.5rem;
+  color: #333;
+  font-weight: 600;
+}
+
+.json-content {
+  background: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 5px;
+  padding: 1rem;
+  overflow-x: auto;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  max-height: 300px;
+  overflow-y: auto;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+.json-content::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.json-content::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.json-content::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+.json-content::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}

@@ -1,0 +1,110 @@
+
+/* src/components/CodeBrowser.css */
+.code-browser {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.browse-form {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  margin-bottom: 2rem;
+}
+
+.browse-form .form-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.browse-form .form-group {
+  margin-bottom: 1rem;
+}
+
+.browse-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.browse-form input,
+.browse-form select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.browse-form input:focus,
+.browse-form select:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.browse-form button {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.browse-form button:hover:not(:disabled) {
+  transform: translateY(-2px);
+}
+
+.browse-form button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.code-details {
+  margin-top: 2rem;
+}
+
+.details-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  border-left: 4px solid #28a745;
+}
+
+.details-card h4 {
+  margin: 0 0 1rem 0;
+  color: #333;
+  font-size: 1.5rem;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 0.5rem;
+}
+
+.details-card p {
+  margin: 0.75rem 0;
+  color: #555;
+  line-height: 1.5;
+}
+
+.details-card strong {
+  color: #333;
+  min-width: 120px;
+  display: inline-block;
+}
+
+.error {
+  background: #fee;
+  color: #c33;
+  padding: 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  border-left: 4px solid #c33;
+}

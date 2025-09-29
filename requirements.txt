@@ -1,0 +1,15 @@
+# requirements.txt
+fastapi==0.104.1
+uvicorn==0.24.0
+python-jose==3.3.0
+python-multipart==0.0.6
+rapidfuzz==3.4.0
+pydantic>=2.7,<3.0
+elasticsearch==8.10.0
+redis==5.0.1
+sentence-transformers==2.2.2
+scikit-learn>=1.2.0
+numpy==1.24.3
+passlib[bcrypt]
+python-multipart
+pandas==2.0.3

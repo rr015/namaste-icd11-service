@@ -1,0 +1,424 @@
+
+.admin-panel {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.admin-tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.admin-tabs button {
+  padding: 10px 20px;
+  border: none;
+  background: #f5f5f5;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.admin-tabs button.active {
+  background: #007bff;
+  color: white;
+}
+
+.admin-tabs button:hover:not(.active) {
+  background: #e9ecef;
+}
+
+.tab-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.csv-textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: monospace;
+  margin-bottom: 10px;
+}
+
+.import-instructions {
+  background: #f8f9fa;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+button {
+  padding: 10px 20px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+button:disabled {
+  background: #6c757d;
+  cursor: not-allowed;
+}
+
+button.secondary {
+  background: #6c757d;
+}
+
+.result {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+.result.success {
+  background: #d4edda;
+  border: 1px solid #c3e6cb;
+}
+
+.result.error {
+  background: #f8d7da;
+  border: 1px solid #f5c6cb;
+}
+
+.versions-list {
+  display: grid;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.version-card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  background: #f8f9fa;
+}
+
+.version-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.active-badge {
+  background: #28a745;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+}
+
+.activate-btn {
+  background: #28a745;
+  margin-top: 10px;
+}
+
+.who-status {
+  padding: 15px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.who-status.connected {
+  background: #d4edda;
+  border: 1px solid #c3e6cb;
+}
+
+.who-status.disconnected {
+  background: #f8d7da;
+  border: 1px solid #f5c6cb;
+}
+
+.error {
+  color: #dc3545;
+  font-weight: bold;
+}
+
+/* Audit Logs Styles */
+.audit-logs {
+  max-height: 70vh;
+  overflow-y: auto;
+}
+
+.audit-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.audit-controls {
+  display: flex;
+  gap: 10px;
+}
+
+.filter-input {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 200px;
+}
+
+.logs-stats {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: #6c757d;
+}
+
+.logs-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.log-entry {
+  border: 1px solid #e9ecef;
+  padding: 12px;
+  border-radius: 6px;
+  background: white;
+}
+
+.log-header {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.timestamp {
+  color: #6c757d;
+  font-family: monospace;
+}
+
+.action {
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.action.search { background: #e3f2fd; color: #1976d2; }
+.action.translate { background: #f3e5f5; color: #7b1fa2; }
+.action.login { background: #e8f5e8; color: #388e3c; }
+.action.csv_import { background: #fff3e0; color: #f57c00; }
+
+.log-details {
+  display: flex;
+  gap: 15px;
+  font-size: 13px;
+  color: #495057;
+}
+
+.compliance-tag {
+  display: inline-block;
+  background: #495057;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 11px;
+  margin-top: 5px;
+}
+
+/* Compliance Styles */
+.compliance-info {
+  display: grid;
+  gap: 15px;
+}
+
+.standard {
+  padding: 15px;
+  border-left: 4px solid #28a745;
+  background: #f8f9fa;
+}
+
+.standard h4 {
+  margin: 0 0 8px 0;
+  color: #155724;
+}
+
+.who-status-monitor {
+  margin-bottom: 2rem;
+}
+
+.status-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.status-controls {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.status-overview {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.status-overview.connected {
+  border-color: #28a745;
+  background-color: #f8fff9;
+}
+
+.status-overview.disconnected {
+  border-color: #dc3545;
+  background-color: #fff8f8;
+}
+
+.status-indicator {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.status-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.status-dot.green {
+  background-color: #28a745;
+}
+
+.status-dot.red {
+  background-color: #dc3545;
+}
+
+.status-text {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.status-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 0.5rem;
+}
+
+.status-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.25rem 0;
+}
+
+.status-item label {
+  font-weight: bold;
+}
+
+.status-item .good {
+  color: #28a745;
+}
+
+.status-item .bad {
+  color: #dc3545;
+}
+
+.status-item.error {
+  grid-column: 1 / -1;
+  background-color: #ffe6e6;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+.detailed-status {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.systems-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.system-status {
+  border: 1px solid #eee;
+  border-radius: 6px;
+  padding: 1rem;
+}
+
+.system-status h5 {
+  margin: 0 0 0.5rem 0;
+  color: #333;
+}
+
+.system-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.9em;
+}
+
+.system-details .status.available {
+  color: #28a745;
+  font-weight: bold;
+}
+
+.system-details .status.unavailable {
+  color: #dc3545;
+  font-weight: bold;
+}
+
+.sync-info {
+  margin-top: 1rem;
+}
+
+.sync-info pre {
+  background-color: #f5f5f5;
+  padding: 1rem;
+  border-radius: 4px;
+  overflow-x: auto;
+  font-size: 0.8em;
+}
+
+.test-btn {
+  background-color: #ffc107;
+  color: #212529;
+}
+
+.test-btn:hover {
+  background-color: #e0a800;
+}
+
+.sync-controls {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.sync-options {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.sync-options label {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  cursor: pointer;
+}

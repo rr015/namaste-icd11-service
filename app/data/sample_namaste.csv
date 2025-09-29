@@ -1,0 +1,8 @@
+# app/data/sample_namaste.csv
+# Create a sample CSV file for testing
+sample_csv_content = """code,display_name,definition,dosha,system,synonyms,icd11_tm2_code,icd11_bio_code,mapping_confidence
+AY001,Jwara (Fever),A disorder characterized by elevated body temperature,Tridosha,Systemic,Fever;Pyrexia;Jvar,TM2_KA50,ICD11_KA21,0.95
+AY002,Atisara (Diarrhea),Frequent passage of loose or liquid stools,Vata-Pitta,Digestive,Diarrhea;Loose motions;Dysentery,TM2_KA51,ICD11_DA90,0.88
+AY003,Pandu (Anemia),A condition characterized by pale skin and weakness,Pitta,Circulatory,Anemia;Pallor;Raktalpata,TM2_KA52,ICD11_3A00,0.92
+AY004,Madhumeha (Diabetes),A condition characterized by sweet urine,Kapha-Vata,Metabolic,Diabetes;Sugar disease;Prameha,TM2_KA53,ICD11_5A10,0.96
+AY005,Amavata (Rheumatoid Arthritis),A joint disorder characterized by pain,Vata-Kapha,Musculoskeletal,Rheumatoid arthritis;Joint inflammation;Sandhivata,TM2_KA54,ICD11_FA20,0.93"""
